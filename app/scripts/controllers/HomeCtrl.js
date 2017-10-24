@@ -1,6 +1,7 @@
 (function() {
     function HomeCtrl() {
     }
+	
 
     angular
         .module('blocChat')
