@@ -7,7 +7,7 @@
 		Room.all = rooms;
 		
 		
-		console.log(Room.all);
+		console.log(Room);
 	
 		
 		return Room;

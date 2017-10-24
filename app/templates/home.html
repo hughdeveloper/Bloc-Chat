@@ -1,5 +1,9 @@
 <h1>Bloc Chat</h1>
 
 <div class="chats" ng-controller="RoomCtrl as room">
-<a>{{room.Chat.all}}</a>
+
+	<ul ng-repeat="rooms in room.Chat">
+		<li class="room-value">{{rooms.$value}}</li>
+	</ul>
+
 </div>
