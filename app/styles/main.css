@@ -1,0 +1,41 @@
+h1, h2, h3, h4, p, a {
+	font: helvetica;
+	font-size: 16px;
+}
+
+
+.title {
+width: 100%;
+text-align: center;
+font-size: 2rem;
+}
+
+
+
+
+.side-panel {
+	position: absolute;
+	bottom: 0px;
+	width: 25%;
+	height: 100%;
+	background-color: aliceblue;
+}
+
+.content {
+margin-top: 5rem;
+}
+
+.messages {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
+li {
+list-style: none;
+}
+
+ul {
+	padding-left: 3rem;
+	padding-bottom: .5rem;
+}

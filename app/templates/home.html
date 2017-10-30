@@ -1,9 +1,16 @@
-<h1>Bloc Chat</h1>
+<h1 class="title">Bloc Chat</h1>
 
-<div class="chats" ng-controller="RoomCtrl as room">
+<div class="side-panel">
+	<div class="content">
+		<h2 class="messages">Messages</h2>
 
-	<ul ng-repeat="rooms in room.Chat">
-		<li class="room-value">{{rooms.$value}}</li>
-	</ul>
+		<div class="chats" ng-controller="HomeCtrl as home">
 
+			<ul ng-repeat="rooms in home.Chat">
+				<li class="room-value">{{rooms.$value}}</li>
+			</ul>
+
+		</div>
+
+	</div>
 </div>
