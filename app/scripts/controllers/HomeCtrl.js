@@ -1,6 +1,7 @@
 (function() {
     function HomeCtrl(Room) {
 		this.Chat = Room.all;
+        this.state = Room.state;
     }
 	
 
