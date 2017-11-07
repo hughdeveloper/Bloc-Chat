@@ -1,13 +1,23 @@
 (function() {
-  function HomeCtrl(Room) {
+  function HomeCtrl(Room, $uibModal, $uibModalInstance) {
     this.Chat = Room.all;
-    this.newRoom = Room.formstate;
-  }
 
+console.log($uibModal);
+
+    this.open = function(size) {
+      $uibModal.open({
+        templateUrl: '../templates/createchatrooms.html',
+        controller: 'AddCtrl as add',
+        backdrop: "static",
+        size: size,
+      });
+
+    };
+  };
 
 
 
   angular
     .module('blocChat')
-    .controller('HomeCtrl', ['Room', HomeCtrl]);
+    .controller('HomeCtrl', ['Room','$uibModal', HomeCtrl]);
 })();
