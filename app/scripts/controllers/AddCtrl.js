@@ -1,11 +1,12 @@
 (function() {
-  function AddCtrl($ubiModal, $uibModalInstance, Room) {
+  function AddCtrl($uibModalInstance, Room) {
 
 
     console.log($uibModalInstance);
 
 
-    this.ok = function () {
+    this.ok = function (room) {
+    Room.add(room);
     $uibModalInstance.close(Room);
   };
 
@@ -17,5 +18,5 @@
 
   angular
     .module('blocChat')
-    .controller('AddCtrl', ['Room','$uibModal', AddCtrl]);
+    .controller('AddCtrl', ['$uibModalInstance', 'Room', AddCtrl]);
 })();
