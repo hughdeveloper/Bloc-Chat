@@ -1,17 +1,14 @@
 (function() {
-  function HomeCtrl(Room, $uibModal, $uibModalInstance) {
+  function HomeCtrl(Room, $uibModal) {
     this.Chat = Room.all;
 
-console.log($uibModal);
 
-    this.open = function(size) {
+    this.open = function() {
       $uibModal.open({
-        templateUrl: '../templates/createchatrooms.html',
+        templateUrl: '/templates/createchatrooms.html',
         controller: 'AddCtrl as add',
         backdrop: "static",
-        size: size,
       });
-
     };
   };
 
