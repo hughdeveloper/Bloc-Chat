@@ -1,34 +1,20 @@
 <h1 class="title">Bloc Chat</h1>
 
 <div class="side-panel" ng-controller="HomeCtrl as home">
-    <div class="content">
-        <h2 class="messages">Messages</h2>
+	<div class="content">
+		<h2 class="messages">Messages</h2>
 
-        <a id="add-room" ng-click="home.change(showState)">New Room</a>
 
-        <div class="chats">
+		<button id="add-room" ng-click="showForm()">New Room</button>
 
-            <ul ng-repeat="rooms in home.Chat">
-                <li class="room-value">{{rooms.$value}}</li>
-            </ul>
 
-        </div>
+		<div class="chats">
 
-    </div>
-</div>
+			<ul ng-repeat="rooms in home.Chat">
+				<li class="room-value">{{rooms.$value}}</li>
+			</ul>
 
-<!------------------------- add a room form ------------------------------------>
-<div ng-controller="HomeCtrl as home">
+		</div>
 
-    <div class="add-room-form" ng-show="{{home.state}}">
-
-        <h2 class="form-title">Create New Room</h2>
-        <form action="">
-            <input id='room' type="text" placeholder="Enter a room name">
-            <input id='submit' type="button" value="Create Room">
-            <input id="cancel" type="button" value="Cancel">
-
-        </form>
-    </div>
-
+	</div>
 </div>

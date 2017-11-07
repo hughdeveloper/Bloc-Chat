@@ -1,34 +1,37 @@
-(function () {
-    function Room($firebaseArray) {
-        var Room = {};
-        var ref = firebase.database().ref().child("rooms");
-        var rooms = $firebaseArray(ref);
+(function() {
+  function Room($firebaseArray) {
+    var Room = {};
+    var ref = firebase.database().ref().child("rooms");
+    var rooms = $firebaseArray(ref);
 
-        Room.all = rooms;
-        
-        
-        
-        var showState = true;
+    Room.all = rooms;
 
-        Room.change = function (showState) {
-            if (showState=false) {
-                showState=true;
-            }
-            else {
-                showState = false;
-            }
-            
-            console.log(showState);
-            return showState;
-        };
-        
-        Room.state = showState;
+    /* ------------------ ADD ROOM ---------------------------*/
+
+    // rooms that is being inputted into this function is the new room that we are trying to add to the array
+    Room.add = function(room) {
+      //Use the firebase method $add here
+      rooms.$add(room);
+    };
 
 
-        return Room;
-    }
 
-    angular
-        .module('blocChat')
-        .factory('Room', ['$firebaseArray', Room]);
+
+
+
+    /* ----------- STATE OF THE FORM HIDDEN OR SHOWN ------*/
+
+    var i = true;
+    Room.formstate = i;
+
+
+
+    /*------------------------------------------------*/
+
+    return Room;
+  }
+
+  angular
+    .module('blocChat')
+    .factory('Room', ['$firebaseArray', Room]);
 })();
