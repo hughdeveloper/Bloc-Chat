@@ -14,20 +14,6 @@
       rooms.$add(room);
     };
 
-
-
-
-
-
-    /* ----------- STATE OF THE FORM HIDDEN OR SHOWN ------*/
-
-    var i = true;
-    Room.formstate = i;
-
-
-
-    /*------------------------------------------------*/
-
     return Room;
   }
 
