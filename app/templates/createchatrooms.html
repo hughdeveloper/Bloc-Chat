@@ -1,8 +1,8 @@
-<div ng-controller="AddCtrl as add">
+<div>
   <h2 class="form-title">Create New Room</h2>
-  <form action="">
-    <input id='room' type="text" placeholder="Enter a room name" >
-    <input id='submit' type="button" value="Create Room" ng-click="add.ok">
+  <form action="" id="newRoom">
+    <input id='room' type="text" placeholder="Enter a room name">
+    <input id='submit' type="button" value="Create Room" ng-click="add.submit()">
     <input id="cancel" type="button" value="Cancel" ng-click="add.cancel()">
   </form>
 </div>

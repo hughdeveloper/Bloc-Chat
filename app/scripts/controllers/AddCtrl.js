@@ -5,14 +5,18 @@
     console.log($uibModalInstance);
 
 
-    this.ok = function (room) {
-    Room.add(room);
-    $uibModalInstance.close(Room);
-  };
+    this.submit = function(room) {
 
-  this.cancel = function () {
-    $uibModalInstance.dismiss('cancel');
-  };
+      var room = document.getElementById('room').value;
+      console.log(room);
+      Room.add(room);
+      $uibModalInstance.close();
+    };
+
+
+    this.cancel = function() {
+      $uibModalInstance.close();
+    };
 
   }
 
