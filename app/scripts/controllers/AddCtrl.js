@@ -7,7 +7,7 @@
 
     this.submit = function(room) {
 
-      var room = $uibModalInstance.addroom;
+      var room = this.addroom;
       console.log(room);
       Room.add(room);
       $uibModalInstance.close();
