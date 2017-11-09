@@ -11,7 +11,7 @@
 		<div class="chats">
 
 			<ul ng-repeat="rooms in home.Chat">
-				<li class="room-value">{{rooms.$value}}</li>
+				<li class="room-value" ng-click="home.Update(rooms.$value)">{{rooms.$value}}</li>
 			</ul>
 
 		</div>

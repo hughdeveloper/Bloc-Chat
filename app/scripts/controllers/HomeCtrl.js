@@ -1,7 +1,7 @@
 (function() {
   function HomeCtrl(Room, $uibModal) {
     this.Chat = Room.all;
-
+this.Update = Room.changeRoom;
 
     this.open = function() {
       $uibModal.open({
@@ -11,6 +11,9 @@
       });
     };
   };
+
+
+
 
 
 

@@ -14,6 +14,22 @@
       rooms.$add(room);
     };
 
+
+
+    Room.$scope;
+
+    Room.changeRoom = function(active) {
+    Room.$scope = active;
+    console.log(Room.$scope);
+    return Room.$scope;
+    };
+
+
+
+
+
+
+
     return Room;
   }
 

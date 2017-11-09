@@ -33,6 +33,7 @@ margin-top: 5rem;
 
 li {
 list-style: none;
+cursor: pointer;
 }
 
 ul {
@@ -62,7 +63,3 @@ position: absolute;
     margin: 20% 35% 0% 35%;
     background-color: cadetblue;
 }
-
-
-
-
