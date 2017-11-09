@@ -63,3 +63,16 @@ position: absolute;
     margin: 20% 35% 0% 35%;
     background-color: cadetblue;
 }
+
+
+
+
+.messages {
+	width: 75%;
+	height: 100%;
+	margin-left: 25%;
+}
+
+.roomName {
+	text-align: center;
+}

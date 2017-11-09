@@ -1,30 +1,26 @@
 (function() {
-  function Room($firebaseArray) {
-    var Room = {};
-    var ref = firebase.database().ref().child("rooms");
-    var rooms = $firebaseArray(ref);
+    function Room($firebaseArray) {
+      var Room = {};
+      var ref = firebase.database().ref().child("rooms");
+      var rooms = $firebaseArray(ref);
 
-    Room.all = rooms;
+      Room.all = rooms;
 
-    /* ------------------ ADD ROOM ---------------------------*/
+      /* ------------------ ADD ROOM ---------------------------*/
 
-    // rooms that is being inputted into this function is the new room that we are trying to add to the array
-    Room.add = function(room) {
-      //Use the firebase method $add here
-      rooms.$add(room);
-    };
+      // rooms that is being inputted into this function is the new room that we are trying to add to the array
+      Room.add = function(room) {
+        //Use the firebase method $add here
+        rooms.$add(room);
+      };
 
+Room.$scope;
 
-
-    Room.$scope;
-
-    Room.changeRoom = function(active) {
-    Room.$scope = active;
-    console.log(Room.$scope);
-    return Room.$scope;
-    };
-
-
+      Room.changeRoom = function(active) {
+        Room.$scope = active;
+        console.log(Room.$scope);
+        return Room.$scope;
+      };
 
 
 
@@ -34,6 +30,6 @@
   }
 
   angular
-    .module('blocChat')
-    .factory('Room', ['$firebaseArray', Room]);
+  .module('blocChat')
+  .factory('Room', ['$firebaseArray', Room]);
 })();

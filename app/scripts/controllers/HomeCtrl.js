@@ -2,6 +2,7 @@
   function HomeCtrl(Room, $uibModal) {
     this.Chat = Room.all;
 this.Update = Room.changeRoom;
+this.roomName = Room.$scope;
 
     this.open = function() {
       $uibModal.open({
