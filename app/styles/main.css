@@ -5,12 +5,21 @@ h1, h2, h3, h4, p, a {
 
 
 .title {
+padding-top: 2rem;
 width: 100%;
 text-align: center;
 font-size: 2rem;
 }
 
-
+#add-room {
+	font-size: 1.2rem;
+	color: white;
+    height: 3rem;
+    width: 40%;
+    margin-left: 5%;
+    text-align: center;
+    background-color: blue;
+}
 
 
 .side-panel {
@@ -22,7 +31,7 @@ font-size: 2rem;
 }
 
 .content {
-margin-top: 5rem;
+margin-top: 3rem;
 }
 
 .messages {
@@ -34,25 +43,13 @@ margin-top: 5rem;
 li {
 list-style: none;
 cursor: pointer;
+text-align: center;
 }
 
 ul {
-	padding-left: 3rem;
+	padding-left: 0rem;
 	padding-bottom: .5rem;
 }
-
-#add-room {
-    height: 2rem;
-    width: 60%;
-    margin-left: 20%;
-    line-height: 2rem;
-    text-align: center;
-    background-color: blue;
-}
-
-
-
-
 
 
 .add-room-form {
@@ -67,12 +64,15 @@ position: absolute;
 
 
 
-.messages {
+.messages-box {
 	width: 75%;
 	height: 100%;
 	margin-left: 25%;
+	margin-top: 50px;
 }
 
 .roomName {
+	font-size: 2rem;
+	font-weight: 200;
 	text-align: center;
 }

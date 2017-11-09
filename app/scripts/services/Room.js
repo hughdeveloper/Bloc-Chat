@@ -14,12 +14,14 @@
         rooms.$add(room);
       };
 
+
+
 Room.$scope;
 
       Room.changeRoom = function(active) {
-        Room.$scope = active;
-        console.log(Room.$scope);
-        return Room.$scope;
+        $scope = active;
+        console.log($scope);
+        return Room.$scope = $scope;
       };
 
 

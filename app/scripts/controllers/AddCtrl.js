@@ -2,9 +2,6 @@
   function AddCtrl($uibModalInstance, Room) {
 
 
-    console.log($uibModalInstance);
-
-
     this.submit = function(room) {
 
       var room = this.addroom;
