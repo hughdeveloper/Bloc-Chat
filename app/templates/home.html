@@ -16,9 +16,9 @@
 <div class="messages-box">
 	<h1 class="roomName">{{home.room.$scope}}</h1>
 
-	<ul class="message-content">
-		<li class="user">Username</li>
-		<li class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</li>
-		<li class="time">1:42pm</li>
+	<ul class="message-content" ng-repeat="messages in home.message">
+		<li class="user">{{messages.username}}</li>
+		<li class="text">{{messages.content}}</li>
+		<li class="time">{{messages.sentAt}}</li>
 	</ul>
 </div>

@@ -2,8 +2,7 @@
   function HomeCtrl(Room, $uibModal, Message) {
     this.Chat = Room.all;
     this.room = Room;
-    this.message = Message;
-    console.log(this.message);
+    this.message = Message.all;
 
 
     this.open = function() {

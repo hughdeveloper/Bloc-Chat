@@ -5,13 +5,19 @@
       var messages = $firebaseArray(ref);
 
 
-
+Message.all = messages;
+console.log(messages);
 
 console.log(ref);
 
 
+/*
+Message.getByRoomId = function(roomId) {
+       for () {
 
-
+       }
+   };
+*/
 
       return Message;
     }
