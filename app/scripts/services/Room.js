@@ -5,7 +5,7 @@
       var rooms = $firebaseArray(ref);
 
       Room.all = rooms;
-
+console.log('hello');
       /* ------------------ ADD ROOM ---------------------------*/
 
       // rooms that is being inputted into this function is the new room that we are trying to add to the array
