@@ -4,7 +4,9 @@
 		<div class="chats">
 
 			<ul ng-repeat="rooms in home.Chat">
-				<li class="room-value" ng-click="home.room.changeRoom(rooms.$value)">{{rooms.$value}}</li>
+				<!--ng-click="home.room.changeRoom(rooms.$value, rooms.$id)
+				ng-click="home.messageSort.getByRoomId(rooms.$id)" -->
+				<li class="room-value" ng-click="home.room.changeRoom(rooms.$value); home.messageSort.getByRoomId(rooms.$id)">{{rooms.$value}}</li>
 			</ul>
 
 		</div>
@@ -16,7 +18,7 @@
 <div class="messages-box">
 	<h1 class="roomName">{{home.room.$scope}}</h1>
 
-	<ul class="message-content" ng-repeat="messages in home.message">
+	<ul class="message-content" ng-repeat="messages in home.messageSort.$scope">
 		<li class="user">{{messages.username}}</li>
 		<li class="text">{{messages.content}}</li>
 		<li class="time">{{messages.sentAt}}</li>

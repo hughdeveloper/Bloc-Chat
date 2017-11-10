@@ -6,7 +6,7 @@
 
       Room.all = rooms;
 
-      
+
       /* ------------------ ADD ROOM ---------------------------*/
 
       // rooms that is being inputted into this function is the new room that we are trying to add to the array
@@ -16,13 +16,12 @@
       };
 
 
-
 Room.$scope;
 
+
       Room.changeRoom = function(active) {
-        $scope = active;
-        console.log($scope);
-        return Room.$scope = $scope;
+        Room.$scope = active;
+        return Room.$scope, Room.$id;
       };
 
 

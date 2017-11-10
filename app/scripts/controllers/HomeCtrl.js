@@ -3,7 +3,7 @@
     this.Chat = Room.all;
     this.room = Room;
     this.message = Message.all;
-
+    this.messageSort = Message;
 
     this.open = function() {
       $uibModal.open({
