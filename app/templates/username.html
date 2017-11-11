@@ -2,7 +2,7 @@
   <h1 class="heading">Set a Username</h1>
   <p class="subheading">This name will apear when you send messages.</p>
 
-  <form id="username-form" action="">
+  <form id="username-form" ng-submit="cookies.close()">
     <input type="text" id="username" placeholder="Username" ng-model="cookies.username">
     <br></br>
     <input id='username-submit' type="submit" value="Submit" ng-click="cookies.close()">

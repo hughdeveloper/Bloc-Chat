@@ -25,7 +25,7 @@
 
 
 <div class="new-message">
-	<form action="" class="newMessage">
+	<form class="newMessage" ng-submit="home.send()">
 		<input type="text" id="message" placeholder="New Message" ng-model="home.sendInfo">
 		<input type="button" id="send" value="Send" ng-click="home.send()">
 	</form>

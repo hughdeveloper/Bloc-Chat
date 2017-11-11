@@ -1,6 +1,6 @@
-<div class="createroom">
+<div class="createroom" ng-submit="add.submit()">
   <h1 class="form-title">Create New Room</h2>
-  <form action="" id="newRoom">
+  <form id="newRoom">
     <input id='room' type="text" placeholder="Enter a room name" ng-model="add.addroom">
     <br>
     <input id='submit' type="button" value="Create Room" ng-click="add.submit()">
