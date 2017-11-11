@@ -19,6 +19,9 @@
 Room.$scope;
 
 
+
+// function that changes the scope of the Room.$scope when a new chat room is selected.
+//Changes to chat name at the top of the page
       Room.changeRoom = function(active) {
         Room.$scope = active;
         return Room.$scope, Room.$id;

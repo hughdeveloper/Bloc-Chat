@@ -4,8 +4,6 @@
 		<div class="chats">
 
 			<ul ng-repeat="rooms in home.Chat">
-				<!--ng-click="home.room.changeRoom(rooms.$value, rooms.$id)
-				ng-click="home.messageSort.getByRoomId(rooms.$id)" -->
 				<li class="room-value" ng-click="home.room.changeRoom(rooms.$value); home.messageSort.getByRoomId(rooms.$id)">{{rooms.$value}}</li>
 			</ul>
 

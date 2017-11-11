@@ -6,11 +6,13 @@
 
     Message.all = messages;
 
-    var mode;
+
 
 
 Message.$scope;
 
+
+// function changes the $scope of the Message. Changes the id and only displays the messages that have the same roomId as the roomId that is selected
     Message.getByRoomId = function(input) {
       var id = input.substring(1);
       console.log(id);
