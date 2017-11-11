@@ -7,7 +7,7 @@
 
 
     this.submit = function(username) {
-      
+
       console.log(username);
       $uibModalInstance.close();
     };
@@ -16,7 +16,7 @@
       $uibModal.open({
         templateUrl: '/templates/createchatrooms.html',
         controller: 'AddCtrl as add',
-        backdrop: "static",
+        backdrop: "true",
       });
     };
   };
