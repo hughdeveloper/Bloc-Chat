@@ -1,6 +1,7 @@
 (function() {
   function BlocChatCookies($cookies, $uibModal) {
     var currentUser = $cookies.get('blocChatCurrentUser');
+    console.log($cookies);
     console.log(currentUser);
 
     // opens the template for the instruction to add a currentUser to there browser cookies

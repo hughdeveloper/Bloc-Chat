@@ -19,6 +19,15 @@
 	<ul class="message-content" ng-repeat="messages in home.messageSort.$scope">
 		<li class="user">{{messages.username}}</li>
 		<li class="text">{{messages.content}}</li>
-		<li class="time">{{messages.sentAt}}</li>
+		<li class="time">{{messages.sentAt | date:"h:mm a"}}</li>
 	</ul>
+</div>
+
+
+<div class="new-message">
+	<form action="" class="newMessage">
+		<input type="text" id="message" placeholder="New Message" ng-model="home.sendInfo">
+		<input type="button" id="send" value="Send" ng-click="home.send()">
+	</form>
+
 </div>

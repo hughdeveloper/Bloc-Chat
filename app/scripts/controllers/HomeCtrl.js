@@ -19,6 +19,14 @@
         backdrop: "true",
       });
     };
+
+this.send = function() {
+  var newMessage = this.sendInfo;
+  console.log(this.sendInfo);
+  Message.send(newMessage);
+};
+
+
   };
 
 

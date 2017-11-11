@@ -24,7 +24,8 @@ Room.$scope;
 //Changes to chat name at the top of the page
       Room.changeRoom = function(active) {
         Room.$scope = active;
-        return Room.$scope, Room.$id;
+        console.log(Room.$scope)
+        return Room.$scope;
       };
 
 
