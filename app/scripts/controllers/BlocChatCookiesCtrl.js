@@ -1,13 +1,21 @@
 (function() {
-  function BlocChatCookies($cookies) {
+  function BlocChatCookiesCtrl($uibModalInstance, $cookies, $uibModal) {
     var currentUser = $cookies.get('blocChatCurrentUser');
-    if (!currentUser || currentUser === '') {
-      // Do something to allow users to set their username
-    }
+
+    this.close = function() {
+      var username = this.username;
+      console.log(username);
+        // if the currentUser exsists it will close the username form
+        if (username){
+          $uibModalInstance.close();
+        }
+
+      //updates the browser cookies to set blocChatCurrentUser to the username
+      $cookies.put('blocChatCurrentUser', username);
+    };
   }
 
   angular
-      .module('blocChat')
-    //  .run('BlocChatCookies', ['$cookies', BlocChatCookies]);
-      .controller('BlocChatCookies', ['$cookies', BlocChatCookies]);
-  })();
+    .module('blocChat')
+    .controller('BlocChatCookiesCtrl', ['$uibModalInstance','$cookies', '$uibModal', BlocChatCookiesCtrl]);
+})();

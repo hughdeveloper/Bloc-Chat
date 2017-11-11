@@ -5,6 +5,13 @@
     this.message = Message.all;
     this.messageSort = Message;
 
+
+    this.submit = function(username) {
+      
+      console.log(username);
+      $uibModalInstance.close();
+    };
+
     this.open = function() {
       $uibModal.open({
         templateUrl: '/templates/createchatrooms.html',
@@ -13,8 +20,6 @@
       });
     };
   };
-
-
 
 
 
