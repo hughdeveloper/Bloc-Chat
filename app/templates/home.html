@@ -24,10 +24,10 @@
 </div>
 
 
-<div class="new-message">
+<div class="new-message" ng-hide="!home.room.$scope">
 	<form class="newMessage" ng-submit="home.send()">
 		<input type="text" id="message" placeholder="New Message" ng-model="home.sendInfo">
-		<input type="button" id="send" value="Send" ng-click="home.send()">
+		<input type="submit" id="send" value="Send">
 	</form>
 
 </div>

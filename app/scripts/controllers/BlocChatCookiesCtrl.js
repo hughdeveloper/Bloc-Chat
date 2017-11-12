@@ -4,7 +4,7 @@
 
 
 
-    this.close = function() {
+    this.setUsername = function() {
       var username = this.username;
       console.log(username);
 
