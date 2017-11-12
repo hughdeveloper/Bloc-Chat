@@ -4,7 +4,6 @@
     var ref = firebase.database().ref().child("messages");
     var messages = $firebaseArray(ref);
     Message.all = messages;
-var currentUser = $cookies.get('blocChatCurrentUser');
 
 
 
@@ -25,6 +24,7 @@ Message.roomId;
 
 
     Message.send = function (newMessage, room) {
+      var currentUser = $cookies.get('blocChatCurrentUser');
       if (Message.roomId !== undefined) {
         this.sendInfo = newMessage;
         console.log(newMessage);
