@@ -39,9 +39,6 @@ Message.roomId;
         console.log(messageData);
         messages.$add(messageData);
       }
-      else {
-        alert ("Please select of create a chat room.")
-      }
     };
 
 
