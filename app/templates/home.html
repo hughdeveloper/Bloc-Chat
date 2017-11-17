@@ -15,12 +15,13 @@
 
 <div class="messages-box">
 	<h1 class="roomName">{{home.room.$scope}}</h1>
-
-	<ul class="message-content" ng-repeat="messages in home.messageSort.$scope">
+<div class="scroll" scroll-glue>
+	<ul class="message-content" ng-repeat="messages in home.messageSort.$scope" ng-class-even="'even'">
 		<li class="user">{{messages.username}}</li>
 		<li class="text">{{messages.content}}</li>
 		<li class="time">{{messages.sentAt | date:"h:mm a"}}</li>
 	</ul>
+</div>
 </div>
 
 

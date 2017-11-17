@@ -37,6 +37,7 @@ Message.roomId;
           content: newMessage,
         };
         console.log(messageData);
+        
         messages.$add(messageData);
       }
     };

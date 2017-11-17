@@ -20,10 +20,14 @@
       });
     };
 
+
+
 this.send = function() {
   var newMessage = this.sendInfo;
+  this.sendInfo = '';
   console.log(this.sendInfo);
   Message.send(newMessage);
+  return this.placeholder;
 };
 
 

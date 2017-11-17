@@ -40,6 +40,10 @@ margin-top: 3rem;
 	text-align: center;
 }
 
+.chats {
+	max-height: 80vh;
+	overflow-y: auto;
+}
 
 li {
 list-style: none;
@@ -50,6 +54,16 @@ text-align: center;
 ul {
 	padding-left: 0rem;
 	padding-bottom: .5rem;
+}
+
+.even {
+	background-color: aliceblue;
+}
+
+.scroll {
+	margin-top: 4rem;
+	max-height: 80vh;
+	overflow-y: auto;
 }
 
 
@@ -178,7 +192,7 @@ padding-left: .5rem;
 /*----------------------------- New Message ----------------------------*/
 
 .new-message {
-	position: absolute;
+	position: fixed;
 	bottom: 0rem;
 	width: 75%;
 	margin-left: 25%;
